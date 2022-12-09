@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.676);
+    z-index: -1;
+}
+#logo{
+    margin: 10px;
+    margin-left: 50px;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+
+}
+.navbar li{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    
+}
+.navbar ul li a:hover{
+    background-color:orangered;
+}
+/* ------------------------------------------------------------------------------------------ */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+.h2{
+    font-size: 1.7rem;
+}
+.h3{
+    font-size: 1.8rem;
+}
+.h4{
+    font-size: 1.7rem;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 25px;
+   
+}
+#s1{
+    border: 2px solid rgb(223, 26, 26);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+   
+}
+#s2{
+    border: 2px solid rgb(223, 26, 26);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+#s3{
+    border: 2px solid rgb(223, 26, 26);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+.h5{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-left:200px;
+}
+.l1{
+    margin: 15px;
+}
+.l2{
+    margin: 15px;
+}
+.l3{
+    margin: 15px;
+}
+.l4{
+    margin: 15px;
+}
+.l5{
+    margin: 15px;
+}
+.h6{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.name{
+    margin-left: 550px;
+}
+.email{
+    margin-left: 550px;
+}
+.number{
+    margin-left: 550px;
+}
+.message{
+    margin-left: 550px;
+}
+.submit{
+    margin-left: 605px;
+}
+.btnn{
+    padding: 2px;
+}
+.form{
+    background-color: rgb(204, 236, 232);
+}
