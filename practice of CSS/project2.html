@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("../HTML/photos/g2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Work Sans', sans-serif;
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 12px;
+      }
+      .mid {
+        width: 48%;
+        margin: auto;
+        color: white;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 18px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 15px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        padding-right: 8px;
+        color: white;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(137, 99, 214);
+      }
+      .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 2px 8px;
+        border: 2px solid rgb(144, 114, 114);
+        border-radius: 14px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(57, 191, 184);
+      }
+      .container{
+       margin-top: 100px;
+        width: 35%;
+        text-align: center;
+      }
+      .group input{
+        font-size: 17px;
+        text-align: center;
+        margin: 5px;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 20px;
+      }
+      .btnn{
+        margin-top: 5px;
+        padding-left: 86px;
+        padding-right: 86px ;
+        margin-bottom: 10px;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .btnn:hover{
+        background-color: rgb(78, 202, 230);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="../HTML/photos/logo.png" alt="" />
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#"> About Us </a></li>
+          <li><a href="#"> Fitness Calculator</a></li>
+          <li><a href="#"> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Join The Best Gym OF Gujrat Now</h2>
+      <form action="noaction.php">
+     <div class="group">
+      <input type="text" name="" placeholder="Enter Your Name"><br>
+      <input type="text" name="" placeholder="Enter Your Age"><br>
+      <input type="text" name="" placeholder="Enter Your Gender"><br>
+      <input type="text" name="" placeholder="Enter Your Locality"><br>
+      <button class="btnn">Submit</button>
+     </div>
+      </form>
+    </div>
+  </body>
+</html>
