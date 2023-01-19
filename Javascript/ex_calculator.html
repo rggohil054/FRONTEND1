@@ -57,16 +57,34 @@
     </form>
 
     <script>
-      var btnadd = document.getElementById(btnadd); 
-      var btnsub = document.getElementById(btnsub); 
-      var btnmul = document.getElementById(btnmul); 
-      var btndiv = document.getElementById(btndiv); 
-      var num1 = document.getElementById(num1); 
-      var num2 = document.getElementById(num2); 
-      var output = document.getElementById(output); 
+      var btnadd = document.getElementById("btnadd"); 
+      var btnsub = document.getElementById("btnsub"); 
+      var btnmul = document.getElementById("btnmul"); 
+      var btndiv = document.getElementById("btndiv"); 
+      var num1 = document.getElementById("num1"); 
+      var num2 = document.getElementById("num2"); 
+      var output = document.getElementById("output"); 
         console.log('all variable are created');
 
         function AddCalculate()
+        {
+        if(num1.value=="")
+        {
+          alert('num1 can not be blank & must be number')
+        }
+        else if(num2.value=="")
+        {
+          alert('num2 can not be blank & must be number')
+        }
+        else
+        {
+          var result= parseInt(num1.value) + parseInt(num2.value);
+          console.log(result)
+          output.innerHTML = result;
+        }
+        }
+
+        function SubCalculate()
         {
         if(num1.value=="")
         {
@@ -78,7 +96,43 @@
         }
         else
         {
-          var result= parseInt(nun1.value) + parseInt(num2.value);
+          var result= parseInt(num1.value) - parseInt(num2.value);
+          console.log(result)
+          output.innerHTML = result;
+        }
+        }
+
+        function MulCalculate()
+        {
+        if(num1.value=="")
+        {
+          alert('num1 is must not blank')
+        }
+        else if(num2.value=="")
+        {
+          alert('num2 is must not blank')
+        }
+        else
+        {
+          var result= parseInt(num1.value) * parseInt(num2.value);
+          console.log(result)
+          output.innerHTML = result;
+        }
+        }
+
+        function DivCalculate()
+        {
+        if(num1.value=="")
+        {
+          alert('num1 is must not blank')
+        }
+        else if(num2.value=="")
+        {
+          alert('num2 is must not blank')
+        }
+        else
+        {
+          var result= parseInt(num1.value) / parseInt(num2.value);
           console.log(result)
           output.innerHTML = result;
         }
