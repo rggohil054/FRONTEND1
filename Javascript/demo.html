@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>this the example of 4rth method of object</h1><hr>
+  <h3>check console to see output</h3>
+
+  <script>
+    class movie
+    {
+      constructor(name,starcast,budget)
+      {
+        this.name=name;
+        this.starcast=starcast;
+        this.budget=budget;
+      }
+      display()
+      {
+        console.log('name',this.name);
+        console.log('starcast',this.starcast);
+        console.log('budget',this.budget);
+      }
+    }
+
+    var m1= new movie('padmavt','dipika',2344343);
+    m1.display();
+    var m2= new movie('war','ritik',267844343);
+    m2.display();
+  </script>
+</body>
+</html>
