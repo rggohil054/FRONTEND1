@@ -1,0 +1,77 @@
+<!-- create example of multi-level inhertiance 
+
+    create class foot which has construstor for inches 
+    and method getFoot() which return foot 
+
+    create class meter which extends foot class 
+    and method getMeter() which return Meter  
+
+     create class KM which extends meter class 
+    and method getKM() which return km -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>this is exercise of multi-level inhertiance </h1>
+        <hr>
+        <h3>use consol to see output</h3>
+
+        <script>
+            class foot
+            {
+                constructor(inches)
+                {
+                    this.inches=parseInt(inches);
+                    console.log('inches class constructor called');
+                }
+                getfoot()
+                {
+                    return (inches/12).toFixed(2);
+                }
+            }
+            class meter extends foot
+            {
+                constructor(inches)
+                {
+                    super(inches);
+                    console.log('foot class constructor called');
+                }
+                getmeter()
+                {
+                    return (super.getfoot()*0.3048).toFixed(4);
+                }
+            }
+            class KM extends meter
+            {
+                constructor(inches)
+                {
+                    super(inches);
+                    console.log('meter class constructor called');
+                }
+                getKM()
+                {
+                    return (super.getmeter()/1000).toFixed(7);
+                }
+            }
+
+            var inches=prompt('enter inches',0);
+            var f1=new foot(inches);
+            var result=f1.getfoot();
+            console.log('your foot is ',result);
+
+            var m1=new meter(inches);
+            var result=m1.getmeter();
+            console.log('your meter is ',result);
+
+            var k1=new KM(inches);
+            var result=k1.getKM();
+            console.log('your kilometer is ',result);
+
+        </script>
+    </body>
+    </html>
