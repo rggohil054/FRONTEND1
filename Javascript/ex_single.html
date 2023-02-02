@@ -4,3 +4,39 @@
 
     create class meter which extends foot class 
     and method getMeter() which return Meter -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>this the example of single level inhertiance of inches and foot </h1><hr>
+        <h3>use consol to see output</h3>
+
+        <script>
+            class foot
+            {
+                constructor(inches)
+                {
+                    this.inches=parseInt(inches);
+                    console.log('inches class constructor are called');
+                }
+                getfoot()
+                {
+                    return this.inches/12;
+                }
+
+            }
+            
+            var inches=prompt('enter inches',0);
+            var f1=new foot(inches);
+            var result=f1.getfoot();
+            console.log('your result is',result);
+            
+        </script>
+    </body>
+    </html>
